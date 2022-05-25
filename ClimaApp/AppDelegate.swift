@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ClimaApp
 //
-//  Created by UNAM FCA 01 on 24/05/22.
+//  Created by Argonza 01 on 24/05/22.
 //
 
 import UIKit
