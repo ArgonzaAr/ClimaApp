@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
+    var climaManager = ClimaManager( )
+    
 //UITextFieldDelegate es  un protocolo para identificar cuando el usuario realiza una busqueda
     @IBOutlet weak var txtCiudad: UITextField!
     @IBOutlet weak var condicionClimaImageView: UIImageView!
@@ -54,6 +56,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     //Metodo para limpiar el textfield cuando el usuario completa la búsqueda
     func textFieldDidEndEditing(_ textField: UITextField) {
+        climaManager.buscarClima(ciudad: txtCiudad.text! )
+         
         ciudadLabel.text = txtCiudad.text
         txtCiudad.text = ""
     }

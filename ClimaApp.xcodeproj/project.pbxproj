@@ -14,6 +14,7 @@
 		69224C6C283D67E700A47E67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69224C6A283D67E700A47E67 /* Main.storyboard */; };
 		69224C6E283D67EC00A47E67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69224C6D283D67EC00A47E67 /* Assets.xcassets */; };
 		69224C71283D67EC00A47E67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69224C6F283D67EC00A47E67 /* LaunchScreen.storyboard */; };
+		6924DC61283EC699009B6F85 /* climaDatos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6924DC60283EC699009B6F85 /* climaDatos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		69224C6D283D67EC00A47E67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69224C70283D67EC00A47E67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69224C72283D67EC00A47E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6924DC60283EC699009B6F85 /* climaDatos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = climaDatos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				69224C66283D67E700A47E67 /* SceneDelegate.swift */,
 				69224C68283D67E700A47E67 /* ViewController.swift */,
 				691715B6283E87CE00A136E1 /* Climamanager.swift */,
+				6924DC60283EC699009B6F85 /* climaDatos.swift */,
 				69224C6A283D67E700A47E67 /* Main.storyboard */,
 				69224C6D283D67EC00A47E67 /* Assets.xcassets */,
 				69224C6F283D67EC00A47E67 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				69224C69283D67E700A47E67 /* ViewController.swift in Sources */,
 				69224C65283D67E700A47E67 /* AppDelegate.swift in Sources */,
 				691715B7283E87CE00A136E1 /* Climamanager.swift in Sources */,
+				6924DC61283EC699009B6F85 /* climaDatos.swift in Sources */,
 				69224C67283D67E700A47E67 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
