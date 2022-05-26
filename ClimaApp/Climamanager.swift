@@ -8,8 +8,18 @@
 
 import Foundation
 
+//protocolo Clima manager
+protocol ClimaManagerDelegado {
+    func actualizarClima(clima: ClimaModelo)
+}
+
 struct ClimaManager {
-    let climaURL = "https://api.openweathermap.org/data/2.5/weather?&appid=04478d353b2538bb3c8469ee2988f5e8"
+    
+    let climaURL = "https://api.openweathermap.org/data/2.5/weather?&appid=04478d353b2538bb3c8469ee2988f5e8&units=metric&lang=es"
+    
+    //Quien sea delegado deberá implementar este protocolo
+    var delegado: ClimaManagerDelegado?
+    
     
     func buscarClima (ciudad: String){
         let urlString = "\(climaURL)&q=\(ciudad)"
@@ -31,7 +41,15 @@ struct ClimaManager {
                 
                 if let datosSeguros = datos {
                     //Método para parsear JSON
-                    self.parsearJSON (datosClima: datosSeguros)
+                    if let objetoClima = self.parsearJSON (datosClima: datosSeguros){
+                        //Mandar el objeto al ViewController
+                        //let ClimaVC = ViewController()
+                        //ClimaVC.actualizarClima(objetoClima: objetoClima)
+                        
+                        //Designar un delegado
+                        self.delegado?.actualizarClima(clima: objetoClima)
+                    }
+                        
                 }
             }
             
@@ -39,17 +57,29 @@ struct ClimaManager {
         }
     }
     
-    func parsearJSON(datosClima: Data){
+    func parsearJSON(datosClima: Data) -> ClimaModelo? {
         //Crear decoficador JSON para ordenar los datos
         let decodificador = JSONDecoder()
         do {
             let datosDecodificados = try decodificador.decode(ClimaDatos.self, from: datosClima)
             //Imprimir los datos de API en un formato específico
-            print("La ciudad buscada es: \(datosDecodificados.name)")
-            print ("La temperatura es de: \(datosDecodificados.main.temp)")
-            print ("La descripción es: \(datosDecodificados.weather[0].description)")
+            let id = datosDecodificados.weather[0].id
+            let ciudad = datosDecodificados.name
+            let temp = datosDecodificados.main.temp
+            
+            //Objeto Clima
+            let objetoClima = ClimaModelo(temp: temp, nombreCiudad:  ciudad, id: id)
+            
+            //Objeto para cambiar de imagen
+            print(objetoClima.condicionClima)
+            print(objetoClima.temp)
+            
+            return objetoClima
+            
         } catch  {
             print ("Error al decodificar datos de JSON: \(error.localizedDescription)")
+            return nil
         }
     }
+    
 }

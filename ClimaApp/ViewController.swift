@@ -7,7 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, ClimaManagerDelegado {
+
+    
     var climaManager = ClimaManager( )
     
 //UITextFieldDelegate es  un protocolo para identificar cuando el usuario realiza una busqueda
@@ -21,7 +23,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //Establecer esta clase como el delegado del ClimaManager
+        climaManager.delegado = self
         txtCiudad.delegate = self
     }
  
@@ -62,5 +65,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         txtCiudad.text = ""
     }
     
+    //Actualizar Clima e Interface de usuario 
+    func actualizarClima(clima: ClimaModelo) {
+        print(clima.tempString)
+    }
 }
 

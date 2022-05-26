@@ -15,6 +15,7 @@
 		69224C6E283D67EC00A47E67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69224C6D283D67EC00A47E67 /* Assets.xcassets */; };
 		69224C71283D67EC00A47E67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69224C6F283D67EC00A47E67 /* LaunchScreen.storyboard */; };
 		6924DC61283EC699009B6F85 /* climaDatos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6924DC60283EC699009B6F85 /* climaDatos.swift */; };
+		71B3BD552840140C0033B061 /* ClimaModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3BD542840140C0033B061 /* ClimaModelo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		69224C70283D67EC00A47E67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69224C72283D67EC00A47E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6924DC60283EC699009B6F85 /* climaDatos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = climaDatos.swift; sourceTree = "<group>"; };
+		71B3BD542840140C0033B061 /* ClimaModelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaModelo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				69224C66283D67E700A47E67 /* SceneDelegate.swift */,
 				69224C68283D67E700A47E67 /* ViewController.swift */,
 				691715B6283E87CE00A136E1 /* Climamanager.swift */,
+				71B3BD542840140C0033B061 /* ClimaModelo.swift */,
 				6924DC60283EC699009B6F85 /* climaDatos.swift */,
 				69224C6A283D67E700A47E67 /* Main.storyboard */,
 				69224C6D283D67EC00A47E67 /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71B3BD552840140C0033B061 /* ClimaModelo.swift in Sources */,
 				69224C69283D67E700A47E67 /* ViewController.swift in Sources */,
 				69224C65283D67E700A47E67 /* AppDelegate.swift in Sources */,
 				691715B7283E87CE00A136E1 /* Climamanager.swift in Sources */,
@@ -302,6 +306,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -329,6 +334,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
