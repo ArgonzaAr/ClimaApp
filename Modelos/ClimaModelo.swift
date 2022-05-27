@@ -11,6 +11,7 @@ struct ClimaModelo{
     let temp: Double
     let nombreCiudad: String
     let id: Int
+    let description: String
     
     //Propiedades calculadas, calcula un parametro y lo asigna al objeto
     var tempString: String{
@@ -37,6 +38,27 @@ struct ClimaModelo{
         default:
             return "cloud"
             
+        }
+    }
+    
+    var condicionClima2: String{
+        switch id{
+        case 200...232:
+            return "tormenta2"
+        case 300...321:
+            return "hail"
+        case 500...531:
+            return "sleet"
+        case 600...622:
+            return "nieve"
+        case 701...781:
+            return "puesta.son"
+        case 800:
+            return "soleado"
+        case 801...804:
+            return "sol_nublado"
+        default:
+            return "nube"
         }
     }
     

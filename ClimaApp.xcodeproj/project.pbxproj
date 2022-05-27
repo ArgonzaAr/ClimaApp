@@ -46,6 +46,7 @@
 		69224C58283D67E700A47E67 = {
 			isa = PBXGroup;
 			children = (
+				699925BA284119ED00A5738B /* Modelos */,
 				69224C63283D67E700A47E67 /* ClimaApp */,
 				69224C62283D67E700A47E67 /* Products */,
 			);
@@ -65,15 +66,22 @@
 				69224C64283D67E700A47E67 /* AppDelegate.swift */,
 				69224C66283D67E700A47E67 /* SceneDelegate.swift */,
 				69224C68283D67E700A47E67 /* ViewController.swift */,
-				691715B6283E87CE00A136E1 /* Climamanager.swift */,
-				71B3BD542840140C0033B061 /* ClimaModelo.swift */,
-				6924DC60283EC699009B6F85 /* climaDatos.swift */,
 				69224C6A283D67E700A47E67 /* Main.storyboard */,
 				69224C6D283D67EC00A47E67 /* Assets.xcassets */,
 				69224C6F283D67EC00A47E67 /* LaunchScreen.storyboard */,
 				69224C72283D67EC00A47E67 /* Info.plist */,
 			);
 			path = ClimaApp;
+			sourceTree = "<group>";
+		};
+		699925BA284119ED00A5738B /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				71B3BD542840140C0033B061 /* ClimaModelo.swift */,
+				6924DC60283EC699009B6F85 /* climaDatos.swift */,
+				691715B6283E87CE00A136E1 /* Climamanager.swift */,
+			);
+			path = Modelos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

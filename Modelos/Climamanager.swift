@@ -66,9 +66,10 @@ struct ClimaManager {
             let id = datosDecodificados.weather[0].id
             let ciudad = datosDecodificados.name
             let temp = datosDecodificados.main.temp
+            let des = datosDecodificados.weather[0].description
             
             //Objeto Clima
-            let objetoClima = ClimaModelo(temp: temp, nombreCiudad:  ciudad, id: id)
+            let objetoClima = ClimaModelo(temp: temp, nombreCiudad:  ciudad, id: id, description: des)
             
             //Objeto para cambiar de imagen
             print(objetoClima.condicionClima)

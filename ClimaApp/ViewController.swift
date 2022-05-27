@@ -17,8 +17,8 @@ class ViewController: UIViewController, UITextFieldDelegate, ClimaManagerDelegad
     @IBOutlet weak var condicionClimaImageView: UIImageView!
     @IBOutlet weak var temperaturaLabel: UILabel!
     @IBOutlet weak var ciudadLabel: UILabel!
-    
-    
+    @IBOutlet weak var txtDescription: UILabel!
+    @IBOutlet weak var ImageViewFondo: UIImageView!
     
     
     override func viewDidLoad() {
@@ -60,14 +60,21 @@ class ViewController: UIViewController, UITextFieldDelegate, ClimaManagerDelegad
     //Metodo para limpiar el textfield cuando el usuario completa la búsqueda
     func textFieldDidEndEditing(_ textField: UITextField) {
         climaManager.buscarClima(ciudad: txtCiudad.text! )
-         
-        ciudadLabel.text = txtCiudad.text
         txtCiudad.text = ""
     }
     
     //Actualizar Clima e Interface de usuario 
     func actualizarClima(clima: ClimaModelo) {
-        print(clima.tempString)
+        
+        DispatchQueue.main.async {
+            //Agregar datos a la pantalla del usuario
+            self.temperaturaLabel.text = clima.tempString
+            self.ciudadLabel.text = clima.nombreCiudad
+            self.condicionClimaImageView.image = UIImage(systemName: clima.condicionClima)
+            self.txtDescription.text = clima.description
+            
+            self.ImageViewFondo.image = UIImage(named: clima.condicionClima2)
+        }
     }
 }
 
