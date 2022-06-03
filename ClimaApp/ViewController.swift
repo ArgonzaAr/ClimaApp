@@ -19,8 +19,6 @@ class ViewController: UIViewController, UITextFieldDelegate, ClimaManagerDelegad
     @IBOutlet weak var ciudadLabel: UILabel!
     @IBOutlet weak var txtDescription: UILabel!
     @IBOutlet weak var ImageViewFondo: UIImageView!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         //Establecer esta clase como el delegado del ClimaManager

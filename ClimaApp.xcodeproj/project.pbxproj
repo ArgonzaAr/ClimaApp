@@ -15,6 +15,9 @@
 		69224C6E283D67EC00A47E67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69224C6D283D67EC00A47E67 /* Assets.xcassets */; };
 		69224C71283D67EC00A47E67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69224C6F283D67EC00A47E67 /* LaunchScreen.storyboard */; };
 		6924DC61283EC699009B6F85 /* climaDatos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6924DC60283EC699009B6F85 /* climaDatos.swift */; };
+		6932CC93284A54E50083E621 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6932CC92284A54E50083E621 /* OnboardingViewController.swift */; };
+		6932CCB9284A621B0083E621 /* historial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6932CCB7284A621B0083E621 /* historial.xcdatamodeld */; };
+		6932CCBB284A62F50083E621 /* TableViewControllerHistorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6932CCBA284A62F50083E621 /* TableViewControllerHistorial.swift */; };
 		71B3BD552840140C0033B061 /* ClimaModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3BD542840140C0033B061 /* ClimaModelo.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,9 @@
 		69224C70283D67EC00A47E67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69224C72283D67EC00A47E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6924DC60283EC699009B6F85 /* climaDatos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = climaDatos.swift; sourceTree = "<group>"; };
+		6932CC92284A54E50083E621 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		6932CCB8284A621B0083E621 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		6932CCBA284A62F50083E621 /* TableViewControllerHistorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerHistorial.swift; sourceTree = "<group>"; };
 		71B3BD542840140C0033B061 /* ClimaModelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaModelo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,10 +72,13 @@
 				69224C64283D67E700A47E67 /* AppDelegate.swift */,
 				69224C66283D67E700A47E67 /* SceneDelegate.swift */,
 				69224C68283D67E700A47E67 /* ViewController.swift */,
+				6932CCBA284A62F50083E621 /* TableViewControllerHistorial.swift */,
+				6932CC92284A54E50083E621 /* OnboardingViewController.swift */,
 				69224C6A283D67E700A47E67 /* Main.storyboard */,
 				69224C6D283D67EC00A47E67 /* Assets.xcassets */,
 				69224C6F283D67EC00A47E67 /* LaunchScreen.storyboard */,
 				69224C72283D67EC00A47E67 /* Info.plist */,
+				6932CCB7284A621B0083E621 /* historial.xcdatamodeld */,
 			);
 			path = ClimaApp;
 			sourceTree = "<group>";
@@ -158,7 +167,10 @@
 				71B3BD552840140C0033B061 /* ClimaModelo.swift in Sources */,
 				69224C69283D67E700A47E67 /* ViewController.swift in Sources */,
 				69224C65283D67E700A47E67 /* AppDelegate.swift in Sources */,
+				6932CCB9284A621B0083E621 /* historial.xcdatamodeld in Sources */,
+				6932CCBB284A62F50083E621 /* TableViewControllerHistorial.swift in Sources */,
 				691715B7283E87CE00A136E1 /* Climamanager.swift in Sources */,
+				6932CC93284A54E50083E621 /* OnboardingViewController.swift in Sources */,
 				6924DC61283EC699009B6F85 /* climaDatos.swift in Sources */,
 				69224C67283D67E700A47E67 /* SceneDelegate.swift in Sources */,
 			);
@@ -378,6 +390,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6932CCB7284A621B0083E621 /* historial.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6932CCB8284A621B0083E621 /* Model.xcdatamodel */,
+			);
+			currentVersion = 6932CCB8284A621B0083E621 /* Model.xcdatamodel */;
+			path = historial.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 69224C59283D67E700A47E67 /* Project object */;
 }
