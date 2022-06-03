@@ -1,17 +1,29 @@
 //
-//  TableViewControllerHistorial.swift
+//  HistorialTableViewController.swift
 //  ClimaApp
 //
 //  Created by UNAM FCA 01 on 03/06/22.
 //
 
 import UIKit
+import CoreData
 
-class TableViewControllerHistorial: UITableViewController {
+class HistorialTableViewController: UITableViewController {
 
+    var historial: [Clima]?
+    
+    //Conexión a la base de datos
+    let contexto = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //Lectura de los datos de core data
+        //cargarCoreData()
+        
+        
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
